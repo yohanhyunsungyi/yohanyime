@@ -666,7 +666,6 @@ a:focus, a:hover, a:active {
 .CV-timeline-heading-title {
   line-height: 1;
   color: #18bc9c;
-  font-style: italic;
   font-size: 0.8em;
 }
 .CV-timeline-heading-location {
@@ -674,7 +673,8 @@ a:focus, a:hover, a:active {
 }
 .CV-timeline-heading-duration {
   display: block;
-  font-size: 0.6em;
+  font-size: 0.5em;
+  line-height: 1.6;
   color: #6f6f6f;
 }
 .CV-timeline-details {
