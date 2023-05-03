@@ -1,22 +1,324 @@
-{% extends 'partials/base.html' %}
 {% load static %}
+<!doctype html>
 
-{% block extra_css %}
-    <link rel="stylesheet" href="{% static 'css/colors/pink.css' %}" id="color-opt">
-{% endblock extra_css %}
+<html lang="en" class="no-js">
+<head>
+	<title>Yohan Yi</title>
 
-{% block navbar %}
-    {% include 'partials/navbar.html' %}
-{% endblock navbar %}
+	<meta charset="utf-8">
 
-{% block body_data %}
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="Yohan Yi Portfolio" />
+    <meta name="keywords" content="iOS, iOS Dev, iOS Development" />
+    <meta content="Yohan Yi" name="author" />
 
-{% endblock body_data %}
-
-{% block home %}
-    {% include 'partials/home-1.html' %}
-{% endblock home %}
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i|Poppins:300,400,500,600,700" rel="stylesheet">
     
-{% block extra_javascript %}
+    {% block css %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}" media="screen">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}" media="screen">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/elegant-icons.css' %}" media="screen">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" media="screen">
+    {% endblock css %}
 
-{% endblock extra_javascript %}
+</head>
+<body>
+
+	<!-- Container -->
+	<div id="container">
+		<!-- Header
+		    ================================================== -->
+		<header class="clearfix trans">
+			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="index.html">Yohan Yi<span>.</span></a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right navigate-section">
+							<li class="drop"><a href="#home">Home</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#works">Works</a></li>
+							<li><a href="#articles">Articles</a></li>
+							<li><a href="#contact">Contact</a></li>
+							<li><a class="open-menu" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			</nav>
+		</header>
+		<!-- End Header -->     
+
+		<!-- banner-page-section 
+			================================================== -->
+		<section class="banner-page-section">
+			<div class="container">
+				<h1>👋 Hi, I'm Yohan<span>.</span></h1>
+				<p>I'm a Software Engineer specializing in iOS development. 
+					My dedication lies in creating innovative and user-friendly applications. 
+					<br> Browse through my portfolio to see how I bring ideas to life using clean, efficient code 
+					and captivating user experiences. 
+					<br> Let's work together and make something extraordinary! 
+				</p>
+			</div>
+		</section>
+		<!-- End banner-page-section -->
+
+		<!-- about-us-section 
+			================================================== -->
+		<section class="about-us-section">
+			<div class="container">
+				<div class="about-us-box">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="about-us-post">
+								<h2>Our Mission</h2>
+								<p>Proin facilisis varius nunc. Curabitur eros risus, ultrices et dui ut, luctus accumsan nibh. Fusce convallis sapien placerat tellus suscipit vehicula. Cras vitae diam ut justo elementum faucibus eget a diam. Etiam sodales a sem vitae fermentum. Curabitur pellentesque massa eu nulla et consequat porttitor arcu porttitor. </p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="about-us-post">
+								<h2>Our History</h2>
+								<p>Etiam sodales a sem vitae fermentum. Curabitur pellentesque massa eu nulla et consequat porttitor arcu porttitor. Ea mei nostrum imperdiet deterruisset, mei ludus efficiendi ei. Sea summo mazim ex, ea errem eleifend definitionem vim. </p>
+								<p>Ut nec hinc dolor possim. An eros argumentum vel, elit diceret duo eu, quo et aliquid ornatus delicatissimi.</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="about-us-post">
+								<h2>Our Skills</h2>
+								<div class="skills-box">
+									<div class="skills-progress">
+										<p>Web Design <span>85%</span></p>
+										<div class="meter nostrips">
+											<p style="width: 85%"></p>
+										</div>
+										<p>Branding <span>65%</span></p>
+										<div class="meter nostrips">
+											<p style="width: 65%"></p>
+										</div>
+										<p>Photography <span>75%</span></p>
+										<div class="meter nostrips">
+											<p style="width: 75%"></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End about-us section -->
+
+		<!-- team-section 
+			================================================== -->
+		<section class="team-section">
+			<div class="container">
+				<div class="title-section white-style">
+					<div class="row">
+						<div class="col-md-5">
+							<h1>Meet The Team<span>.</span></h1>
+							<p>Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. </p>
+						</div>
+					</div>
+				</div>
+				<div class="team-box">
+					<div class="row">
+					
+						<div class="col-md-4 col-sm-6">
+							<div class="team-post">
+								<div class="inner-team-post">
+									<div class="image-hover">
+										<img src="{% static 'images/upload/team/team1.jpg' %}" alt="">
+									</div>
+									<h2>Laura Smith</h2>
+									<p>Marketing Menager</p>
+									<ul class="social-icons">
+										<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+										<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+										<li><a class="google" href="#"><i class="fa fa-google-plus"></i></a></li>
+										<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+										<li><a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					
+						<div class="col-md-4 col-sm-6">
+							<div class="team-post">
+								<div class="inner-team-post">
+									<div class="image-hover">
+										<img src="{% static 'images/upload/team/team2.jpg' %}" alt="">
+									</div>
+									<h2>John Rawley</h2>
+									<p>Administrator, Designer</p>
+									<ul class="social-icons">
+										<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+										<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+										<li><a class="google" href="#"><i class="fa fa-google-plus"></i></a></li>
+										<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+										<li><a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					
+						<div class="col-md-4 col-sm-6">
+							<div class="team-post">
+								<div class="inner-team-post">
+									<div class="image-hover">
+										<img src="{% static 'images/upload/team/team3.jpg' %}" alt="">
+									</div>
+									<h2>John Doe</h2>
+									<p>Developer, Photographer</p>
+									<ul class="social-icons">
+										<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+										<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+										<li><a class="google" href="#"><i class="fa fa-google-plus"></i></a></li>
+										<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+										<li><a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End team section -->
+
+		<!-- clients-section 
+			================================================== -->
+		<section class="clients-section">
+			<div class="container">
+				<div class="title-section">
+					<div class="row">
+						<div class="col-md-5">
+							<h1>Clients<span>.</span></h1>
+							<p>Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. </p>
+						</div>
+					</div>
+				</div>
+				<div class="clients-box">
+					<ul class="client-list">
+						<li><a href="#"><img src="{% static 'images/clients/1.png' %}" alt=""></a></li>
+						<li><a href="#"><img src="{% static 'images/clients/2.png' %}" alt=""></a></li>
+						<li><a href="#"><img src="{% static 'images/clients/3.png' %}" alt=""></a></li>
+						<li><a href="#"><img src="{% static 'images/clients/4.png' %}" alt=""></a></li>
+						<li><a href="#"><img src="{% static 'images/clients/5.png' %}" alt=""></a></li>
+						<li><a href="#"><img src="{% static 'images/clients/6.png' %}" alt=""></a></li>
+						<li><a href="#"><img src="{% static 'images/clients/1.png' %}" alt=""></a></li>
+						<li><a href="#"><img src="{% static 'images/clients/2.png' %}" alt=""></a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!-- End clients section -->
+
+		<!-- footer 
+			================================================== -->
+		<footer>
+			<div class="up-footer">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-md-3 col-sm-6">
+							<div class="footer-widget text-widget">
+								<h1>we are orion<span>.</span></h1>
+								<span>hello@orion.com</span>
+								<span>+(123) 456 7890</span>
+							</div>
+							<div class="footer-widget social-widget">
+								<h2>We are social</h2>
+								<ul class="social-icons">
+									<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a class="google" href="#"><i class="fa fa-google-plus"></i></a></li>
+									<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+									<li><a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6">
+							<div class="footer-widget posts-widget">
+								<h2>Recent Posts</h2>
+								<ul class="latest-posts">
+									<li>
+										<h2><a href="single-post.html">Donec odio. Quisque volutpat mattis eros. Nullam malesuada </a></h2>
+										<a href="#">5 comment</a>
+									</li>
+									<li>
+										<h2><a href="single-post.html">Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.  </a></h2>
+										<a href="#">2 comment</a>
+									</li>
+									<li>
+										<h2><a href="single-post.html">Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</a></h2>
+										<a href="#">13 comment</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6">
+							<div class="footer-widget instagram-widget">
+								<h2>Instagram Feed</h2>
+								<ul class="instagram-list">
+									<li><a href="#"><img src="{% static 'images/upload/instagram/1.jpg' %}" alt=""></a></li>
+									<li><a href="#"><img src="{% static 'images/upload/instagram/2.jpg' %}" alt=""></a></li>
+									<li><a href="#"><img src="{% static 'images/upload/instagram/3.jpg' %}" alt=""></a></li>
+									<li><a href="#"><img src="{% static 'images/upload/instagram/4.jpg' %}" alt=""></a></li>
+									<li><a href="#"><img src="{% static 'images/upload/instagram/5.jpg' %}" alt=""></a></li>
+									<li><a href="#"><img src="{% static 'images/upload/instagram/6.jpg' %}" alt=""></a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6">
+							<div class="footer-widget newsletter-widget">
+								<h2>Newsletter</h2>
+								<p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. </p>
+								<form class="newletter-form">
+									<input type="text" name="your-email" id="your-email" placeholder="email"/>
+									<input type="submit" id="submit_it" value="go"/>
+								</form>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<p class="copyright">
+				&copy; Copyright 2017. "Orion" by Nunforest. All rights reserved.
+			</p>
+		</footer>
+		<!-- End footer -->
+
+	</div>
+	<!-- End Container -->
+
+	{% block javascript %}
+	<script src="{% static 'js/jquery.min.js' %}"></script>
+	<script src="{% static 'js/jquery.migrate.js' %}"></script>
+	<script src="{% static 'js/jquery.appear.js' %}"></script>
+	<script src="{% static 'js/jquery.countTo.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'js/jquery.imagesloaded.min.js' %}"></script>
+  	<script src="{% static 'js/jquery.isotope.min.js' %}"></script>
+	<script src="{% static 'js/retina-1.1.0.min.js' %}"></script>
+	<script src="{% static 'js/script.js' %}"></script>
+    {% endblock javascript %}
+</body>
+</html>
