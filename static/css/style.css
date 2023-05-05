@@ -284,6 +284,7 @@ h2 {
   color: #ffc952;
 }
 .title-section.white-style h1 {
+  margin-top: 40px;
   color: #ffffff;
 }
 .title-section.white-style:before {
@@ -585,7 +586,7 @@ a.button-one {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   text-transform: uppercase;
-  padding: 16px 40px 12px;
+  padding: 12px 40px 12px;
   background: #f9f9f9;
   -webkit-border-radius: 24px;
   -moz-border-radius: 24px;
@@ -760,8 +761,13 @@ section.single-project-section .single-project-box div.share-box ul.share-list l
 section.about-us-section {
   padding: 0 0 110px;
 }
+section.about-us-section span {
+  font-family: 'Merriweather', serif;
+  display: inline-block;
+  color: #ffc952 ;
+}
 section.about-us-section .about-us-box .about-us-post {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 section.about-us-section .about-us-box .about-us-post h2 {
   margin-left: 15px;
@@ -891,7 +897,10 @@ section.team-section .team-box .team-post:hover .inner-team-post:after {
   opacity: 1;
 }
 section.clients-section {
-  padding: 110px 0;
+  padding-top: 110px;
+  padding-right: 110px;
+  padding-bottom: 0px;
+  padding-left: 110px;
 }
 section.clients-section .clients-box {
   max-width: 1660px;
@@ -1751,7 +1760,12 @@ section.contact-form-section .info-box.address p span {
 /*-------------------------------------------------*/
 footer .up-footer {
   background: #f9f9f9;
-  padding: 110px 0;
+  padding-top: 50px;
+  padding-right: 110px;
+  padding-bottom: 50px;
+  padding-left: 110px;
+  text-align: center;
+
 }
 footer .up-footer .footer-widget {
   margin-bottom: 30px;
@@ -1979,6 +1993,7 @@ footer p.copyright {
   section.banner-page-section h1 {
     font-size: 55px;
     line-height: 120px;
+    padding: 40px 0;
   }
 }
 @media (max-width: 991px) {
@@ -2221,7 +2236,7 @@ footer p.copyright {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 
-  padding: 50px 0;
+  padding: 0px 0;
 }
 .ag-courses_item {
   -ms-flex-preferred-size: calc(33.33333% - 30px);
