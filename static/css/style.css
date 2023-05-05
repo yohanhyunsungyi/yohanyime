@@ -658,7 +658,13 @@ section.banner-page-section h1 span {
   color: #ffc952;
 }
 section.banner-page-section p {
-  font-size: 15px;
+  font-size: 20px;
+}
+section.banner-page-section u {
+  font-size: 20px;
+  font-weight: 650;
+  font-family: 'Poppins', sans-serif;
+  color: #121212c1;
 }
 section.banner-page-section.white-style {
   background: #333333;
