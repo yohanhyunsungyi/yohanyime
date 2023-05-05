@@ -85,26 +85,26 @@
 								<h1>🚀 My Works<span>.</span></h1>
 								<div class="ag-format-container">
 									<div class="ag-courses_box">
-
+										{% for work in myworks %}
 									  <div class="ag-courses_item">
-										<a href="https://apps.apple.com/us/app/my-daily-memo/id1278855094?ls=1" target="_blank" class="ag-courses-item_link">
+										<a href="{{ work.link }}" target="_blank" class="ag-courses-item_link">
 										  <div class="ag-courses-item_bg"></div>
 										  <div class="ag-courses-item_title">
-											My Daily Memo
+											{{ work.title }}
 										  </div>
 										  <br>
 										  <div class="ag-courses-item_date-box">
 											<span class="ag-courses-item_skills">
-												iOS App with Swift, Realm, TouchID, Notifications
+												{{ work.subtitle }}
 											</span>
 											<br>
 											<p class="ag-courses-item_desc">
-												Experience a highly-rated 4.8/5 versatile calendar app that streamlines your life with daily memos, holiday displays, quote integration, customizable alarms, monthly topics, and secure access via password, Touch ID, or Face ID.
+												{{ work.desciption }}
 											</p>
 										</div>
-
 										</a>
 									  </div>
+									  {% endfor %}
 									</div>
 								</div>
 							</div>
@@ -114,6 +114,8 @@
 			</div>
 		</section>
 		<!-- End about-us section -->
+
+
 
 		<!-- team-section 
 			================================================== -->

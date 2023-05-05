@@ -22,6 +22,6 @@ urlpatterns = [
     # Index
     path('',views.index,name="index"),
     # Admin
-    path('admin/', admin.site.urls),
+    path('yohan/', admin.site.urls),
 
 ]
