@@ -3,6 +3,8 @@ from django.utils import timezone
 from .models import Work
 from .form import WorkForm
 from django.shortcuts import redirect
+from django.http import HttpResponse
+
 # Create your views here.
 def work_new(request):
     if request.method == "POST":
@@ -12,7 +14,7 @@ def work_new(request):
             # post.author = request.user
             # post.published_date = timezone.now()
             post.save()
-            return redirect('work_new', pk=post.pk)
+            return HttpResponse('www.yohanyi.me')
     else:
         form = WorkForm()
     return render(request, 'index/workNew.html', {'form': form})
