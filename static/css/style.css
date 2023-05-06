@@ -288,7 +288,7 @@ h2 {
   color: #ffc952;
 }
 .title-section.white-style h1 {
-  margin-top: 40px;
+  margin-top: 25px;
   color: #ffffff;
 }
 .title-section.white-style h2 {
@@ -666,6 +666,19 @@ section.banner-page-section u {
   font-family: 'Poppins', sans-serif;
   color: #121212c1;
 }
+
+.highlight {
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.highlight2 {
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
 section.banner-page-section.white-style {
   background: #333333;
 }
